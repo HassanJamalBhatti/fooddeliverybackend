@@ -32,7 +32,7 @@ app.use('/uploads', express.static('uploads'));
 const upload = multer({ dest: 'uploads/' });
 
 // 🔥 MongoDB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/foodhut")
+mongoose.connect(process.env.MONGODB_URI || "https://cloud.mongodb.com/v2/69f864dc92178d2d468598d9/foodhut")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
